@@ -42,7 +42,7 @@ header nav {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgb(23, 88, 108, 0.7);
+  background-color: rgba(234, 80, 126, 0.667);
   backdrop-filter: blur(10px);
   height: 60px; /* pour garder la hauteur de la navigation */
   display: flex;
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: rgba(5, 78, 84, 0.712);
+  background-color: rgba(103, 7, 95, 0.712);
   border-radius: 10px;
   padding: 10px;
 }
@@ -74,12 +74,10 @@ p {
 }
 header p {
   text-align: center;
-  color: #fff;
   font-size: 1.5em;
 }
 header h1 {
   text-align: center;
-  color: #fff;
   font-style: italic;
   font-family: "Dancing Script", cursive;
   font-size: 6em;
@@ -89,15 +87,15 @@ h1 {
   cursor: pointer;
 }
 h1:hover {
-  color: rgb(6, 74, 74);
+  color: rgb(202, 21, 139);
   transform: scale(1.07);
 }
 
 /* POUR LA SECTION */
 section div.para {
   text-transform: uppercase;
-  color: rgb(54, 108, 115);
-  background-color: rgb(119, 178, 195);
+  color: rgb(60, 9, 50);
+  background-color: rgb(242, 112, 218);
   height: 50px;
   font-weight: bold;
 }
@@ -128,14 +126,14 @@ section div.para {
 .card {
   position: relative;
   background-color: #fff;
-  border: 1px solid grey;
+  border: 1px solid rgb(83, 81, 83);
   margin-top: 20px;
   /* border-radius: 10px; */
   box-shadow: 5px 8px 13px 3px rgb(3, 75, 97);
 }
 .produits div.card:hover {
   transform: scale(1.07);
-  box-shadow: 5px 8px 13px 3px rgb(188, 82, 220);
+  box-shadow: 5px 8px 13px 3px rgb(184, 45, 226);
 }
 div.card span {
   position: absolute;
@@ -168,10 +166,10 @@ button {
   position: absolute;
   padding: 10px 20px;
   border-radius: 20px 20px 20px 20px;
-  border: 2px solid lightskyblue;
+  border: 2px solid rgb(221, 8, 161);
   font-size: 14px;
   background: transparent;
-  color: lightskyblue;
+  color: rgb(137, 8, 126);
   overflow: hidden;
 }
 button {
@@ -193,7 +191,7 @@ div.trait {
   margin: 60px auto;
 }
 footer {
-  background-color: rgb(126, 172, 203);
+  background-color: rgba(234, 80, 126, 0.667);
   color: #fff;
   padding: 20px 0;
   font-size: 14px;
@@ -254,20 +252,6 @@ footer a:hover {
 }
 
 /* MEDIAQUERIE */
-
-button {
-  width: 50%; /* Le bouton prendra 50% de la largeur disponible */
-}
-img {
-  max-width: 100%; /* Limite la taille de l'image à la largeur de son conteneur */
-  height: auto; /* Préserve les proportions */
-}
-/* Styles par défaut (pour les grands écrans) */
-.produits {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px 40px;
-}
 
 /* Pour les écrans de moins de 768px */
 @media screen and (max-width: 768.98px) {
