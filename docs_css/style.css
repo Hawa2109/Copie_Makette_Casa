@@ -184,12 +184,7 @@ button:hover {
 }
 /* partie FOOTER */
 /* Pour le trait */
-div.trait {
-  height: 1px;
-  width: 40%;
-  background-color: #fffae1;
-  margin: 60px auto;
-}
+
 footer {
   background-color: rgba(234, 80, 126, 0.667);
   color: #fff;
@@ -199,15 +194,15 @@ footer {
 }
 .footer_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 50px;
-  /* Pour le trait */
-  /* border-bottom: 2px solid #fff; */
+  align-items: flex-end;
+  margin: 50px;
 }
 .footer_section {
   width: 40%;
 }
-.footer_section h4 {
+.footer_section h5 {
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -223,21 +218,29 @@ footer {
   text-decoration: none;
   color: #fff;
 }
-.footer_bottom {
+/* Pour ne pas cibler l'élément P  */
+.footer_bottom:not(.trait p) {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  padding: 10px 50px;
-  flex-direction: row-reverse;
+  padding: 10px 150px;
+  margin-right: 70px;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 18px;
 }
 .social_icons i {
-  margin-right: 5px;
-  font-size: 18px;
+  padding: 10px;
+}
+div.trait {
+  height: 1px;
+  width: 95%;
+  background-color: #fffae1;
+  margin: 50px auto;
 }
 .footer_bottom p {
   padding: 0 50px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 footer a {
   transition: 0.5s ease-out;
