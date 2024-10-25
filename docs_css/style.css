@@ -258,6 +258,10 @@ footer a:hover {
 
 /* Pour les écrans de moins de 768px */
 @media screen and (max-width: 768.98px) {
+  header {
+    background: url(../images/bg.jpg);
+    height: 300px;
+  }
   .produits {
     grid-template-columns: repeat(2, 1fr); /*Passer à 2 colonnes*/
   }
@@ -265,6 +269,14 @@ footer a:hover {
     font-size: 14px;
     top: 5px;
     left: 5px;
+  }
+}
+
+@media screen and (max-width: 600.98px) {
+  header {
+    background: url(../images/bg.jpg);
+    height: 200px;
+    background-size: contain;
   }
 }
 
