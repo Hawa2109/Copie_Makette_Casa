@@ -1,0 +1,161 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    /* toute les images ont une taille maxi qui est celle de leur parent */
+    max-width: 100%;
+}
+/* mes couleurs en variables */
+:root {
+    --blanc: #fff;
+    --gris-clair: #ddd;
+    --gris-transparent: rgba(0, 0, 0, 0.212);
+    --gris: rgb(155, 155, 155);
+    --gris-foncé: rgb (94, 94, 94);
+    --bleu-clair: #c1d2d9;
+    --bleu-foncé: #7bafc9
+}
+/* header */
+header {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;  /* on couvre tout notre header */
+   background-position: center; /*  on centre l'image */
+    height: 90vh; /* on ne répéte pas l'image  vh signifie View port height -> cela veut dire qu'il représent 90% de la hauteur de l'écran de l'utilisateur, peu importe la taille de son écran*/
+    background-repeat: no-repeat;
+}
+header div#navigation{
+    /* height: 4rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--gris-transparent);
+}
+header a {
+    color: var(--blanc);
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    transition: 2s ease; /* la transition arrive en douceur */
+}
+header nav a:last-of-type {
+    border: 2px solid var(--blanc);
+}
+header nav a:hover{
+    background-color: var(--bleu-foncé);
+}
+/* header H2 et le P */
+header #en-tete {
+    text-align: center;
+    color: var(--blanc);
+}
+#en-tete h2 {
+    text-transform: capitalize; /* pour les premier léttres */
+    font-size: 4em;
+    font-weight: lighter;
+    line-height: 1em;
+    margin: 15px 0 0 0;
+}
+#en-tete p {
+    margin: 0;
+}
+/* PARTIE RECHERCHE  */
+#recherche {
+    height: 10vh;
+    background-color: var(--bleu-clair);
+    color: var(--bleu-foncé);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#recherche p{
+    font-weight: 600;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+#recherche i {
+    font-size: 1.2em;
+}
+/* LA PARTIE MAIN */
+.conteneur {
+    width: 70%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+}
+article div{
+    border: 1px solid var(--gris-clair);
+    position: relative;
+}
+.prix {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: var(--blanc);
+    border: none;
+    padding: 15px 10px;
+    
+}
+.texte {
+    border: none;
+    padding: 15px;
+}
+
+/* Rangée et colonne  */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.333333%;
+  padding: 25px
+}
+.col-2 {
+  width: 16.6666%;
+  padding: 25px
+}
+.col-3 {
+  width: 25%;
+  padding: 25px
+}
+.col-4 {
+  width: 33.333333%;
+  padding: 25px
+}
+.col-5 {
+  width: 41.6666666%;
+  padding: 25px
+}
+.col-6 {
+  width: 50%;
+  padding: 25px
+}
+.col-7 {
+  width: 58.333333%;
+  padding: 25px
+}
+.col-8 {
+  width: 66.666666%;
+  padding: 25px
+}
+.col-9 {
+  width: 75%;
+  padding: 25px
+}
+.col-10 {
+  width: 83.333333%;
+  padding: 25px
+}
+.col-11 {
+  width: 91.666666%;
+  padding: 25px
+}
+.col-12 {
+  width: 100%;
+  padding: 25px
+}
